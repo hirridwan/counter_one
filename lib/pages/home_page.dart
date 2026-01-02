@@ -81,7 +81,7 @@ class _CounterPageState extends State<CounterPage> {
                 if (isNew) {
                   counters.add(CounterItem(name: ctrl.text.trim()));
                 } else {
-                  counters[index!].name = ctrl.text.trim();
+                  counters[index].name = ctrl.text.trim();
                 }
                 _save();
                 Navigator.pop(context);
@@ -142,7 +142,7 @@ class _CounterPageState extends State<CounterPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'My Counters',
+          'Counter One',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: false,
